@@ -336,18 +336,18 @@ input[type="submit"]:hover, .button:hover {
 /* Heading Section - Give you a title and sub title styles */
 .page-heading {
   margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 @media (min-width: 48em) {
   .page-heading {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 }
 
 .sub-heading {
   font-size: 1.2em;
   line-height: 1.4em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 @media (min-width: 48em) {
   .sub-heading {
@@ -358,7 +358,7 @@ input[type="submit"]:hover, .button:hover {
 
 .heading-wrap {
   text-align: center;
-  margin: 3em auto;
+  margin: 2.4em auto;
 }
 @media (min-width: 48em) {
   .heading-wrap {
@@ -668,7 +668,8 @@ body .section {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin: 8em auto 6em auto;
+  height: 320px;
+  margin: 5em auto 6em auto;
   padding: 0 1em;
 }
 #about .intro-wrap:after {
@@ -680,7 +681,7 @@ body .section {
   max-width: 25em;
   text-align: center;
   margin: 4em auto;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.5em;
   font-style: italic;
 }
@@ -727,8 +728,7 @@ body .section {
   display: inline-block;
   width: 100%;
   background: #000;
-  height: 435px !important;
-  max-height: 435px !important;
+  max-height: 16em;
   overflow: hidden;
   font-size: 1.5em;
   font-size: 7vw;
@@ -784,7 +784,7 @@ body .section {
   display: block;
   position: absolute;
   color: #fff;
-  margin-top: 8em;
+  margin-top: 6em;
   vertical-align: bottom;
   opacity: 1;
   z-index: 9999;

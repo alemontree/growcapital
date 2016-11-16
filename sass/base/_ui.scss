@@ -139,16 +139,16 @@ input[type="submit"], .button {
 /* Heading Section - Give you a title and sub title styles */
 .page-heading {
   margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 2.2em;
   @include breakpoint ($bp-med) {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 }
 
 .sub-heading {
   font-size: 1.2em;
   line-height: 1.4em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   @include breakpoint ($bp-med) {
     font-size: 1.5em;
     line-height: 1.6em;
@@ -157,7 +157,7 @@ input[type="submit"], .button {
 
 .heading-wrap {
   text-align: center;
-  margin:3em auto;
+  margin: 2.4em auto;
   @include breakpoint ($bp-med) {
     margin: 4em auto;
   }
