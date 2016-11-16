@@ -1,0 +1,68 @@
+@mixin border-top {
+  border-top: 0.09em solid $col-grey-e;
+}
+
+@mixin border-radius($radius: 3px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-all-around-object () {
+	@include border-radius;
+	border: .09em solid $col-grey-e;
+}
+
+/**
+ * Gives the effect of pushing a button.
+ */
+@mixin push-down {
+  @include transition(0.3s all linear);
+  @include transform(scale(0.95));
+}
+%push-down {
+  @include push-down;
+}
+
+
+@mixin button($color) {
+	background-color: $color;
+	background: $color;
+	padding: 1em 2em;
+	font-size: 0.9em;
+	color: $col-white;
+	border: none;
+	&:active {
+		@include push-down;
+	}
+	&:visited {
+		color: $col-white;
+	}
+	&:hover {
+		color: $col-white;
+		@if $color == $col-green {
+			background-color: $col-green-hover;
+		} 
+		@if $color == $col-teal-1 {
+			background-color: $col-teal-2;
+		} 
+		@if $color == $col-teal-2 {
+			background-color: $col-teal-3;
+		} 
+	}
+	&:active {
+		color: $col-white;
+	}
+}
+
+@mixin icons {
+	width: 2em;
+	height: 2.2em;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5em;
+}
+
+

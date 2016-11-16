@@ -1,0 +1,107 @@
+#features {
+	padding: 0 1em;
+	clear:both;
+	text-align: center;
+	@include border-top();
+	.features-wrapper {
+		position: relative;
+		bottom:-.5em;
+		padding-bottom: 0;
+			h1 {
+				text-align: left;
+				@include breakpoint ($bp-med) {
+					text-align: center;
+					margin-bottom: 2em;
+				}
+			}
+		.features-column1 {
+			margin: 2em 0 0 0;
+			@include breakpoint ($bp-xl) {
+				padding-bottom: 6em;
+				@include span (1 at 1 of 3);
+				max-width:30%;
+			}
+		}
+		.features-cta {
+			.button-wrap {
+				margin: 4em 0;
+			}
+			@include breakpoint ($bp-small) {
+				float:left;
+			}
+			@include breakpoint ($bp-xl) {
+				float:none;
+			}
+		}
+		.features-img {
+			margin: 3em auto 0 auto;
+			max-width: 20em;
+			height: 100%;
+			img {
+				width: 100%;
+				margin: auto;
+				@include breakpoint ($bp-med) {
+				    margin: -24em 0 0 0em;
+				    width: 30em;
+				}
+				@include breakpoint ($bp-xl) {
+					
+					margin: 0 0 -33em 0em;
+					width: 20em;
+				}
+				@include breakpoint ($bp-xl) {
+					width: 24em;
+				}
+			}
+			@include breakpoint ($bp-small) {
+				max-width:20em;
+			}
+			@include breakpoint ($bp-xl) {
+				@include span (1 at 2 of 3);
+				max-width:20em;
+				margin-right: 0;
+			}
+			@include breakpoint ($bp-xl) {
+				width: 24em;
+    			margin-left: -4em;
+			}
+		}
+		.features-column3 {
+			@include breakpoint ($bp-xl) {
+				@include span (1 at 3 of 3);
+				width: 30%;
+				margin: 3em 0 0 0;
+			}
+		}
+		.icon {
+			div {
+				@include icons();
+			}
+		}
+		.future {
+			background: url('../images/icon-eye.png');
+			background-image: url('../images/icon-eye.svg'), none;
+		}
+		.good {
+			background: url('../images/icon-smile.png');
+			background-image: url('../images/icon-smile.svg'), none;
+		}
+		.quick {
+			background: url('../images/icon-dollar.png');
+			background-image: url('../images/icon-dollar.svg'), none;
+		}
+		.impact {
+			background: url('../images/icon-ui.png');
+			background-image: url('../images/icon-ui.svg'), none;
+		}
+		.ease {
+			background: url('../images/icon-ui.png');
+			background-image: url('../images/icon-ui.svg'), none;
+		}
+
+		@include breakpoint ($bp-large) {
+			@include container ($container-full);
+			padding:7em 0 0em 0;
+		}
+	}
+}

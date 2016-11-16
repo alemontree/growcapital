@@ -1,0 +1,24 @@
+.section-learn {
+	@include container (60em);
+	.learn-wrapper {
+		padding: 8em 1em;
+		margin: 0 auto;
+		text-align: center;
+		.learn-txt {
+			h2 {
+	    		line-height: 1.5em;
+				font-weight: lighter;
+				font-size: 1.4em;
+				@include breakpoint ($bp-small) {
+					font-size: 1.6em;
+				}
+				@include breakpoint ($bp-med) {
+					font-size: 2em;
+				}
+			}	
+		}
+		.button-wrap {
+			margin: 6.5em 0 2em 0;
+		}
+	}
+}

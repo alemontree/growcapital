@@ -1,0 +1,138 @@
+#section-services {
+	background: $col-grey-f;
+	.heading-wrap {
+		padding: 6em 0;
+		margin: 0;
+		.sub-heading { 
+			max-width: 15em;
+			margin: .5em auto;
+			padding: 0 1em;
+			@include breakpoint ($bp-small) {
+				max-width: 100%;
+				font-size: 1.4em;
+			}
+		}
+	}
+	.services {
+		background-color: $col-dark-blue-2;
+		.wrap {
+			@include container (75em);
+			margin: 0 auto;
+			.service {
+				width: 100%;
+				height: auto;
+				background-position: center;
+				@include breakpoint ($bp-large) {
+					height: 29em;
+				}
+				background-attachment: contain;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				@include span(12 at 1);
+				@include breakpoint ($bp-large) {
+					width: 100%;
+				}
+				.txt-wrap {
+					background: rgba(26, 30, 35, 0.5);
+					@include breakpoint ($bp-large) {
+						height: 100%;
+					}
+					@include breakpoint ($bp-large) {
+						background: rgba(26, 30, 35, 0.2);
+					}
+					&:hover {
+						background: rgba(26, 30, 35, 0.8);
+					}
+					.txt {
+						padding: 4.5em 2em;
+						height: auto;
+						color: $col-white;
+						h2 {
+							font-weight: lighter;
+							position: relative;
+							margin-bottom: 3em;
+							line-height: 1.4em;
+							@include breakpoint ($bp-med) {
+								font-size: 1.5em;
+							}
+    						@include breakpoint ($bp-large) {
+								font-size: 1.2em;
+							}
+							@include breakpoint ($bp-xl) {
+								font-size: 1.4em;
+							}
+						}
+						p {
+    						max-width: 30em;
+    						@include breakpoint ($bp-med) {
+								font-size: 1.2em;
+    							line-height: 1.4em;
+    							max-width: 90%;
+							}
+    						@include breakpoint ($bp-large) {
+	    						line-height: 1.4em;	
+	    						font-size: .85em;
+	    					}
+    						@include breakpoint ($bp-xl) {
+	    						line-height: 1.4em;	
+	    						font-size: .98em;
+	    					}
+						}
+
+						h2::after {
+						    content: '';
+						    display: block;
+						    position: absolute;
+						    width: 5em;
+						    margin-top: .5em;
+						    padding-top: 1em;
+						    border-top: 1px solid $col-brand-1;
+						}
+					}
+				}
+			}
+			.service1 {
+				background-image: url($services-portfolio-management);
+				@include breakpoint ($bp-large) {
+					@include span(6 at 1);
+				}
+			}
+			.service2 {
+				background-image: url($services-tax-planning);
+				@include breakpoint ($bp-large) {
+					@include span(6 at 6);
+				}
+			}
+			.service3 {
+
+				background-image: url($services-retirement-forcasts);
+
+				background-position: top;
+				@include breakpoint ($bp-large) {
+					@include span(6 at 1);
+				}
+			}
+			.service4 {
+				background-image: url($services-wealth-transfer);
+				@include breakpoint ($bp-large) {
+					@include span(6 at 6);
+				}
+			}
+			.service5 {
+				background-image: url($services-decision-analysis);
+				background-position: bottom;
+				@include breakpoint ($bp-large) {
+					@include span(6 at 1);
+				}
+			}
+			.service6 {
+				background-image: url($services-insurance-reviews);
+				@include breakpoint ($bp-large) {
+					@include span(6 at 6);
+				}
+			}
+		}
+	}
+}

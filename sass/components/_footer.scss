@@ -1,0 +1,111 @@
+footer {
+  clear:both;
+	background-color: $col-blue-gray;
+	.footer-links {
+    	padding: 2em 1em 0em 1em;
+		color: $col-white;
+		@include breakpoint ($bp-small) {
+    		padding: 3em 1em 0em 1em;
+		}
+		ul {
+			width: 100%;
+			display: block;
+			padding-bottom: 2em;
+		    margin-right: -4px;
+			li.link-sections {
+		    	vertical-align: top;
+			    width: 100%;
+			    display: block;
+				margin: 0 -4px 2em 0;
+				border-bottom: .1em solid $col-dark-blue;
+				&.last {
+		            border: none;
+		            @include breakpoint ($bp-small) {
+						text-align: left;
+		            }
+		            @include breakpoint ($bp-med) {
+		            	text-align: right;
+		            }
+		        }
+				@include breakpoint ($bp-small) {
+					font-size: 1em;
+					width: 33%;
+					display: inline-block;
+					border: 0;
+				}
+				@include breakpoint ($bp-med) {
+					width: 24%;
+					display: inline-block;
+					padding-bottom: 0;
+				}
+				.link-items {
+					img.twitter {
+						margin-right: 1em;
+					}
+					li {
+						font-size:1em;
+						@include breakpoint ($bp-small) {
+			    			font-size:.9em;
+			    		}
+						color: $col-white;
+						line-height: 1.8em;
+						a {
+						    color: #fff;
+						    &:hover {
+						    	color: $col-blue-gray-a;
+						    }
+						}
+					}
+				}
+				&.social-media {
+					.media-items {
+						margin-top: 1em;
+						display: flex;
+						a {
+							width: 25%;
+							margin-right:.5em;
+							img {
+								width: 100%;
+								max-width: 1.7em;
+							}
+						}
+					}
+				}
+			}
+		}
+		@include breakpoint ($bp-large) {
+			@include container ($container-full);
+		}
+	}
+
+	.bottom {
+		clear: both;
+		background-color: $col-dark-blue;
+		color: $col-white;
+		width: 100%;
+		.copywrite-txt {
+			padding: 3em 1em;	
+			margin: 0;
+			.logo-icon-footer {
+				float: left; 
+				img {
+					width: 2.05em;
+				}
+			}
+			.footer-txt {
+				margin-left: 3em;
+				p {
+					margin: 0;
+					font-size: .8em;
+				}
+				.txt-address {
+					color: $col-blue-gray-6;
+					font-size: .8em;
+				}
+			}
+			@include breakpoint ($bp-large) {
+				@include container ($container-full);
+			}	
+		}
+	}
+}

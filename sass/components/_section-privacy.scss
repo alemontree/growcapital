@@ -1,0 +1,23 @@
+#privacy {
+	@include border-top();
+	article {
+		text-align: left;
+		padding: 2em;
+		@include breakpoint ($bp-large) {
+			@include container ($container-full);
+		}
+		h1 {
+			text-align: center;
+			margin: 0 auto 1.5em auto;
+		}
+		h2 {
+			margin: 4em auto 2em auto;
+		}
+		ul {
+			margin-left: 2em;
+			li {
+				list-style-type: initial;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+#how {
+	@include border-top();
+	article {
+		padding: 0 1em;
+		p {
+			color: $col-brand-1; 
+			@include breakpoint ($bp-small) {
+				/* Put your styles here for when page is greater that a small mobile device */
+				color: blue;
+			}
+			@include breakpoint ($bp-med) {
+				/* Put your styles here for tablet size  */
+				color: green;
+			}
+			@include breakpoint ($bp-large) {
+				/* Put your styles here for a small desktop size */
+				color: orange;
+			}
+			@include breakpoint ($bp-xl) {
+				/* Put your styles here for a full screen desktop size */
+				color: purple;
+				@include container ($container-full);
+				padding: 0;
+			}
+		}
+	}
+	.app-store {
+		text-align: center;
+		margin:5em auto 5em auto;
+	}
+}

@@ -1,0 +1,16 @@
+#careers {
+	@include border-top();
+	padding: 0 1em;
+	.content {
+		text-align: left;
+		margin-top: 4em;
+		@include container ($container-large);
+		h2 {
+			margin-top: 2em;
+			font-weight: 400;
+		}
+		.button-wrap {
+			margin-top: 5em;
+		}
+	}
+}

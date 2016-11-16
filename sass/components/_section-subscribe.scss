@@ -1,0 +1,38 @@
+.subscribe {
+	background-color: $col-teal-1;
+	color: $col-white;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+
+	padding: 5em 0 8em 0;
+	article {
+		h1 {
+			font-size: 2.6em;
+    		line-height: 1.4;
+    		padding: 0 .5em;
+			@inlcude breakpoint ($bp-med) {
+				font-size: 2.4em;
+			}
+		}
+	}
+	.app-store {
+		img {
+			width: 9em;
+			margin: 0 .5em;
+		}
+	}
+	input[type="text"] {
+		display: inline-block;
+		height:3.1em;
+	    padding-left: 1.5em;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    background: #FFF;
+    	border: 2px solid #FFF;
+		width: 20em;
+	}
+	input[type="submit"] {
+		margin-top: 1em;
+	}
+}

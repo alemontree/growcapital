@@ -1,0 +1,62 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+
+html, body {
+  font-family: $font-base-family;
+  font-size: $font-base-size;
+  font-weight: 300;
+  color: $col-blue-gray-4;
+  line-height: $font-base-lineheight;
+  @include breakpoint($bp-large) {
+    font-size: $font-base-size-large;
+    line-height: $font-base-lineheight-large;
+  }
+}
+
+a {
+  @include transition(0.3s all linear);
+  text-decoration: none;
+  color: $col-teal-1;  
+  &:hover {
+    color: $col-teal-4;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+}
+
+h1 {
+  font: 300 1.5em/1.5em $font-base-family;
+  @include breakpoint ($bp-large) {
+    font: 300 3em/1.5em $font-base-family;
+  }
+}
+
+h2 {
+  font: 300 1.1em/1.4em $font-base-family;
+  @include breakpoint ($bp-large) {
+    font: 300 1.2em/1.7em $font-base-family;
+  }
+}
+
+h3 {
+  font: 400 .95em/1.2em $font-base-family;
+  text-transform: uppercase;
+}
+
+h4 {
+  font: 400 .95em/1em $font-base-family;
+  color: $col-orange;
+}
+
+h5 {
+  font: 400 .85em/1.2em $font-base-family;
+}
+
+h6 {
+}
+
+p {
+  margin-bottom: 2em;
+}

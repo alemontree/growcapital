@@ -1,0 +1,86 @@
+#section-team-member{
+	background-color: $col-grey-f;
+	.heading-wrap {
+		padding: 2em 0;
+		margin: 0;
+		.sub-heading {
+			margin-top:0em;
+		}
+		@include breakpoint ($bp-large) {
+			padding: 5em 0;
+		}
+		@include breakpoint ($bp-xl) {
+			padding: 6em 0;
+		}
+	}
+	.bio {
+		background-color: $col-dark-blue-2;
+		.bio-wrap {
+			overflow: hidden;
+			background-color: $col-white;
+			@include breakpoint ($bp-xl) {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+			}
+			li {
+			}
+			@include container ($container-full);
+			.img {
+				background-color: $col-dark-blue-2;
+				text-align: center;
+				margin: 0;
+				display: flex;
+				@include breakpoint ($bp-xl) {
+					display: block;
+				}
+				img {
+					width: auto;
+					height: auto;
+					object-fit: cover;
+					max-height: 550px;
+					max-width: 400px;
+					margin: 0 auto;
+					@include breakpoint ($bp-small) {
+						height: 100%;
+						width: auto;
+					}
+				}
+				&.todd-img {
+					@include breakpoint ($bp-xl) {
+						margin-right: 5em;
+					}
+				}
+			}
+			.txt-area {
+				padding: 4em 0;
+				background-color: #efefef;
+				p {
+					padding: 0 2em;
+				}
+				.firstcharacter {
+					float:left; 
+					color: $col-dark-blue;
+					font-family: Georgia; 
+					font-size: 5em; 
+					line-height: .8em; 
+					padding-top: .02em;
+					padding-right: 0.1em;
+					padding-left: 0em;
+					font-family: Georgia; 
+				}
+				@include breakpoint ($bp-med) {
+					padding: 5em 0;
+				}
+				@include breakpoint ($bp-xl) {
+					padding: 2em 0;
+				}
+			}
+		}
+	}
+	.join {
+
+	}
+}

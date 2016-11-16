@@ -1,0 +1,51 @@
+.footer-contact {
+   background-color: $col-white;
+   width: 100%;
+   color: $col-black;
+   .contact-wrap {
+      @include container ($container-full);
+      margin: 0 auto;
+      padding: 2em 1em;
+      @include breakpoint ($bp-med) {
+         padding: 2em 1em 1em 1em;
+      }
+      @include breakpoint ($bp-large) {
+         display: flex;
+      }
+      .contact-title-list {
+      }
+      ul {
+         clear: both;
+         width: 100%;
+         display: table;
+         li {
+            margin-bottom: 1em;
+            @include breakpoint ($bp-med) {
+               display: table-cell;
+               text-align: left;
+               margin-bottom: 0em;
+
+            }
+         }
+         .contact-icon {
+            width: 1.5em;
+            margin: 0 .5em 0 0;
+            position: relative;
+            top: .5em;
+            @include breakpoint ($bp-med) {
+               height: 1.5em;
+               margin: 0 .5em 0 0;
+            }
+            img {
+               &:hover {
+                  fill: $col-teal-4;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+

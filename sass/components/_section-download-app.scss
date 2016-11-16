@@ -1,0 +1,85 @@
+
+
+
+.app-store {
+  a {
+    img {
+      width: 9em;
+      &:active, :focus {
+        @include push-down;
+      }
+    }
+    &.android-btn {
+      margin-left: 0em;
+      @include breakpoint ($bp-med) {
+        margin-left: .5em;
+      }
+    }
+  }
+}
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 30em;
+  margin: 0 auto;
+  color: #000;
+  padding:4em 4em 6em 4em;
+  @include border-radius();
+  p {
+    margin-bottom: 2em;
+    font-size: 1.6em;
+    line-height: 1.6em;
+  }
+}
+
+
+.android-email-signup {
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+  input[type="text"]{
+    @include border-all-around-object();
+    width: 20em;
+    height: 3.4em;
+    margin-bottom: 1em;
+  }
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.45s ease-out;
+  -moz-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.45s ease-out;
+  -moz-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}

@@ -1,0 +1,171 @@
+
+ul {
+  margin: 0;
+  padding:0;
+  li {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0.25em;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.9);
+  color: $col-grey-4;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 10em;
+  height: 3.9em;
+  font-size: .8em;
+  font-weight: 300;
+}
+
+input[type="submit"], .button {
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-appearance: none;
+  &:hover {
+    color: $col-white;
+  }
+}
+
+.apple-icon {  
+  img {
+    width: .9em;
+    position: relative;
+    top: .1em;
+    right: .5em;
+  }
+}
+
+.button-wrap {
+  &:active, :focus {
+    @include push-down;
+  }
+  .button-green {
+    @include button($col-green);
+    @include border-radius();
+  }
+
+  .button-teal-bright {
+    @include button($col-teal-1);
+    @include border-radius();
+  }
+
+  .button-teal-dark {
+    @include button($col-teal-2);
+    @include border-radius();
+  }
+
+  .button-blue {
+    @include button($col-dark-blue);
+    @include border-radius();
+  }
+}
+/* Orange Icon List */
+
+.icon-list {
+  margin: 1em 0 1.5em 0;
+  max-width: 20em;
+  text-align: left;
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    &.sub-txt {
+      font-size: .9em;
+      display: block;
+      padding-left: 2.55em;
+      margin: 0 auto;
+      @include breakpoint ($bp-xl) {
+        padding-left:0;
+        text-align: center;
+          line-height: 1.4em;
+      }
+    }
+    h4 {
+      margin: .5em 0 0 0;
+      @include breakpoint ($bp-xl) {
+        margin: 0 auto 1em auto;
+        text-align: center;
+      }
+      padding: 0;
+    }
+    &.icon {
+      margin: .4em 0 0em 0;
+      @include breakpoint ($bp-xl) {
+        margin: 0 0 1em 0;
+      }
+    }
+    @include breakpoint ($bp-xl) {
+      display: block;
+    }
+
+  }
+}
+
+/* The Sections Padding */
+.section-wrapper {
+  padding: 3em .5em;
+  @include breakpoint ($bp-med) {
+    padding: 4em 1em;
+  }
+  @include breakpoint ($bp-large) {
+    padding: 6em 1em;
+  }
+}
+
+.multi-column {
+  @include breakpoint ($bp-med) {
+    column-count: 2;
+    column-gap: 2em;
+    text-align: justify;
+    p {
+      margin: 0; 
+    }
+  }
+}
+
+/* Heading Section - Give you a title and sub title styles */
+.page-heading {
+  margin: 0 auto;
+  font-size: 2.5em;
+  @include breakpoint ($bp-med) {
+    font-size: 3em;
+  }
+}
+
+.sub-heading {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  @include breakpoint ($bp-med) {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+}
+
+.heading-wrap {
+  text-align: center;
+  margin:3em auto;
+  @include breakpoint ($bp-med) {
+    margin: 4em auto;
+  }
+  @include breakpoint ($bp-large) {
+    margin: 6em auto;
+  }
+}
+/****************/
+
+
+

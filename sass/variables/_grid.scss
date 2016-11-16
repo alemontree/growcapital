@@ -1,0 +1,28 @@
+/*
+ * Susy defaults
+ *
+ * @see http://susydocs.oddbird.net/en/latest/settings/ 
+ */
+
+$container-med: 38em;
+$container-large: 50em;
+$container-full: 66em; 
+
+$susy: (	
+	  columns: 12,
+	  container: $container-full,
+	  math: fluid,
+	  output: float,
+	  gutter-position: split,
+	  gutters: 0
+);
+
+$smallLayout: (	
+	  columns: 12,
+	  container: $container-full,
+	  math: fluid,
+	  output: float,
+	  gutter-position: split,
+	  gutters: 0
+	  //@include layout($smallLayout)
+);

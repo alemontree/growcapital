@@ -1,0 +1,17 @@
+#fees {
+	@include border-top ();
+	article:nth-child(2) {
+		font-size: 3em;
+		text-align: center;
+		margin: 0 auto 3em auto;
+		p {
+			margin: 0em auto 2em auto;
+		}
+	}
+	.app-store {
+		text-align: center;
+		margin-bottom: 5em;
+	}
+}
+
+	

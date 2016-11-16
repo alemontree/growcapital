@@ -1,0 +1,107 @@
+header {
+	padding: 0;
+	@include container ($container-full);
+	.header {
+		padding: 0 .5em;
+		@include breakpoint ($bp-med) {
+			padding: 0 1em;
+		}
+		@include breakpoint ($bp-xl) {
+			@include breakpoint (90em) {
+				padding: 0;
+			}
+		}
+		.header-logo {
+			float:left;
+			max-width: 3em;
+			@include breakpoint ($bp-small) {
+				max-width: 8em;
+				margin: 3em 0 .5em 0;
+			}
+			@include breakpoint ($bp-large) {
+				margin: .7em 0 .5em 0;
+			}
+			img {			
+				width:100%;
+				margin: 0 ;
+				&.logo-icon-img {
+					display: block;
+					max-width: 2.5em;
+					margin:2.8em 0 0 0;
+					position: absolute;
+					@include breakpoint ($bp-small) {
+						display: none;
+					}
+				}
+				&.logo-img {
+					display: none;
+					margin: .4em 0 0 0;
+					width: 10em;
+					position: absolute;
+					@include breakpoint ($bp-small) {
+						display: block;
+						width: 10em;
+					}
+					@include breakpoint ($bp-med) {
+						display: block;
+						width: 13em;
+						margin: 0;
+					}
+					@include breakpoint ($bp-large) {
+						display: block;
+						width: 11em;
+						margin: .8em 0 0 0;
+					}
+				}
+			}
+		}
+		nav {
+			float: right;
+			font-size: 1em;
+			width:100%;
+			text-align: right;
+			margin: .7em 0 .5em 0;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+					list-style: none;
+					margin: 0 0 .4em 1em;
+					vertical-align: bottom;
+					@include breakpoint ($bp-med) {
+						margin: 0 0 .4em 2em;
+					}
+					a {
+						color: $col-blue-gray-dark;
+						font-size: .9em;
+						@include breakpoint ($bp-large) {
+							font-size: .88em;
+						}
+						font-weight: normal;
+						&:hover {
+							color: $col-blue-gray;
+						}
+
+					}
+					&.first {
+						margin-left:0;
+					}
+					.button, .button-wrap .button-green {
+						padding:1em 2em;
+					    text-align: center;
+					    font-size: .8em;
+					}	
+					&.client-login {
+						display: block;
+						text-align: right;
+						margin-top: .5em;
+						@include breakpoint ($bp-large) {
+							display: inline-block;
+						}
+					}			
+				}
+			}
+		}
+	}
+}
