@@ -40,8 +40,8 @@
 					width: auto;
 					height: auto;
 					object-fit: cover;
-					max-height: 550px;
-					max-width: 400px;
+					// max-height: 550px;
+					// max-width: 400px;
 					margin: 0 auto;
 					@include breakpoint ($bp-small) {
 						height: 100%;
