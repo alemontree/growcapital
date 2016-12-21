@@ -1,33 +1,20 @@
 header {
-	padding: 0;
 	@include container ($container-full);
 	.header {
-		padding: 0 .5em;
-		@include breakpoint ($bp-med) {
-			padding: 0 1em;
-		}
-		@include breakpoint ($bp-xl) {
-			@include breakpoint (90em) {
-				padding: 0;
-			}
-		}
 		.header-logo {
-			float:left;
+			margin: .5em;
+			@include span (1 of 2 at 1);
+			text-align: left;
 			max-width: 3em;
 			@include breakpoint ($bp-small) {
 				max-width: 8em;
-				margin: 3em 0 .5em 0;
-			}
-			@include breakpoint ($bp-large) {
-				margin: .7em 0 .5em 0;
+				margin: 1.3em 0 0 1em;
 			}
 			img {			
 				width:100%;
-				margin: 0 ;
 				&.logo-icon-img {
 					display: block;
 					max-width: 2.5em;
-					margin:2.8em 0 0 0;
 					position: absolute;
 					@include breakpoint ($bp-small) {
 						display: none;
@@ -35,7 +22,6 @@ header {
 				}
 				&.logo-img {
 					display: none;
-					margin: .4em 0 0 0;
 					width: 10em;
 					position: absolute;
 					@include breakpoint ($bp-small) {
@@ -43,44 +29,68 @@ header {
 						width: 10em;
 					}
 					@include breakpoint ($bp-med) {
-						display: block;
-						width: 13em;
-						margin: 0;
+						width: 10em;
 					}
+
 					@include breakpoint ($bp-large) {
-						display: block;
-						width: 11em;
-						margin: .8em 0 0 0;
+						width: 10.5em;
 					}
 				}
 			}
+			@include breakpoint ($bp-large) {
+				@include span (1 of 3 at 1);
+				max-width:13em;
+			}
+		}
+		.client-login { 
+			@include span (1 of 2 at 2);
+			text-align: right;
+			font-size:.9em;
+			margin: 1em 1em 1em 0;
+			@include breakpoint ($bp-large) {
+				@include span (1 of 3 at 3);
+				max-width: 9em;
+			}
+			.button-green { 
+				background-color: $col-white;
+				border: 1px solid $col-brand-1;
+				color: $col-brand-1;
+				padding:.6em 1em;
+				font-size: .9em;
+				&:hover {
+					background-color: $col-white;
+					border: 1px solid $col-teal-4;
+					color: $col-teal-4;
+				}	
+			}
 		}
 		nav {
-			float: right;
+			@include span (2 of 2 at 1);
+			padding: .7em 0 .5em 0;
+    		margin: 0 0 0;
+			@include border-top;
+			display: block;
 			font-size: 1em;
 			width:100%;
-			text-align: right;
-			margin: .7em 0 .5em 0;
+			text-align: center;
 			ul {
-				margin: 0;
-				padding: 0;
+				width: 100%;
+				max-width: 30em;
+    			margin: 0  auto;
+				display: table;
 				li {
-					display: inline-block;
+					display: table-cell;
 					list-style: none;
-					margin: 0 0 .4em 1em;
-					vertical-align: bottom;
-					@include breakpoint ($bp-med) {
-						margin: 0 0 .4em 2em;
-					}
+					margin: 2em 0em 0em 2em;
 					a {
-						color: $col-blue-gray-dark;
+						color: $col-blue-gray-6;
 						font-size: .9em;
+						font-weight: normal;
 						@include breakpoint ($bp-large) {
 							font-size: .88em;
 						}
-						font-weight: normal;
 						&:hover {
-							color: $col-blue-gray;
+							color: $col-brand-1;
 						}
 
 					}
@@ -92,16 +102,37 @@ header {
 					    text-align: center;
 					    font-size: .8em;
 					}	
-					&.client-login {
-						display: block;
-						text-align: right;
-						margin-top: .5em;
-						@include breakpoint ($bp-large) {
-							display: inline-block;
-						}
-					}			
 				}
+			}
+			@include breakpoint ($bp-large) {
+				@include span (1 of 3 at 2);
+				float: right;
+				background-color: white;
+				margin-top: .3em;
+				border:none;
+				width: 100%;
+				max-width:23em;
+				min-width: 10em;
 			}
 		}
 	}
 }
+
+// Navigation blue underline
+body.page-team {
+	@include nav-underline ('page-team');
+}
+body.page-analytics {
+	@include nav-underline ('page-analytics');
+}
+	
+
+
+	
+
+
+
+
+
+
+

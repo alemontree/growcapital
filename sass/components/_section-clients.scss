@@ -1,8 +1,9 @@
 #section-clients {
 	@include border-top();
 	.content {
-		text-align: left;
+		text-align: center;
 		margin-top: 4em;
+		padding: 0 1em;
 		@include container ($container-med);
 		.button-wrap {
 			margin: 5em auto;

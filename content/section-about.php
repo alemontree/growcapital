@@ -8,41 +8,49 @@
 			<ul>
 				<li>
 					<div class="member-title">
-						<h3>Todd Wilson</h3>
-						<h4>President</h4>
-						<div class="read-more">
-							<a href="todd-wilson.php">Read more...</a>
-						</div>
+						<a href="todd-wilson.php">
+							<h3>Todd Wilson</h3>
+							<h4>President</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/todd-wilson-large.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Douglas Heske</h3>
-						<h4>CEO</h4>
-						<div class="read-more">
-							<a href="douglas-heske.php">Read more...</a>
-						</div>
+						<a href="douglas-heske.php">
+							<h3>Douglas Heske</h3>
+							<h4>CEO</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/douglas-heske-large.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Anthony Randazzo</h3>
-						<h4>CTO</h4>
-						<div class="read-more">
-							<a href="anthony-randazzo.php">Read more...</a>
-						</div>
+						<a href="anthony-randazzo.php">
+							<h3>Anthony Randazzo</h3>
+							<h4>CTO</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/anthony-randazzo.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>David Hsu</h3>
-						<h4>Chief Compliance Officer</h4>
-						<div class="read-more">
-							<a href="david-hsu.php">Read more...</a>
-						</div>
+						<a href="david-hsu.php">
+							<h3>David Hsu</h3>
+							<h4>Chief Compliance Officer</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/david-hsu-large.jpg" /></div>
 				</li>
@@ -59,61 +67,73 @@
 
 				<li>
 					<div class="member-title">
-						<h3>Cynthia Lor</h3>
-						<h4>VP Portfolio Manager</h4>
-						<div class="read-more">
-							<a href="cynthia-lor.php">Read more...</a>
-						</div>
+						<a href="cynthia-lor.php">
+							<h3>Cynthia Lor</h3>
+							<h4>VP Portfolio Manager</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/cynthia-lor.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Matthew Casey</h3>
-						<h4>Director, Retirement Consulting</h4>
-						<div class="read-more">
-							<a href="matthew-casey.php">Read more...</a>
-						</div>
+						<a href="matthew-casey.php">
+							<h3>Matthew Casey</h3>
+							<h4>Director, Retirement Consulting</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/matthew-casey.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Loran White</h3>
-						<h4>Head of Client Experience</h4>
-						<div class="read-more">
-							<a href="loran-white.php">Read more...</a>
-						</div>
+						<a href="loran-white.php">
+							<h3>Loran White</h3>
+							<h4>Head of Client Experience</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/loran-white.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Craig Ebersole</h3>
-						<h4>Analytics</h4>
-						<div class="read-more">
-							<a href="craig-ebersole.php">Read more...</a>
-						</div>
+						<a href="craig-ebersole.php">
+							<h3>Craig Ebersole</h3>
+							<h4>Analytics</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/craig-ebersole.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Isabela Ramiro</h3>
-						<h4>Marketing and Communications</h4>
-						<div class="read-more">
-							<a href="isabela-ramiro.php">Read more...</a>
-						</div>
+						<a href="isabela-ramiro.php">
+							<h3>Isabela Ramiro</h3>
+							<h4>Marketing and Communications</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/isabela-ramiro.jpg" /></div>
 				</li>
 				<li>
 					<div class="member-title">
-						<h3>Joe Euphrat</h3>
-						<h4>Analytics &amp; GCM</h4>
-						<div class="read-more">
-							<a href="joe-euphrat.php">Read more...</a>
-						</div>
+						<a href="joe-euphrat.php">
+							<h3>Joe Euphrat</h3>
+							<h4>Analytics &amp; GCM</h4>
+							<div class="read-more">
+								Read more
+							</div>
+						</a>
 					</div>
 					<div class="img"><img src="images/joe-euphrat.jpg" /></div>
 				</li>

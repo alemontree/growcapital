@@ -20,6 +20,8 @@
          display: table;
          li {
             margin-bottom: 1em;
+            font-weight: 400;
+            color: $col-blue-gray-4;
             @include breakpoint ($bp-med) {
                display: table-cell;
                text-align: left;

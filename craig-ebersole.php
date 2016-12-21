@@ -4,7 +4,7 @@
       <title>Grow Capital Management</title>
       <?php include 'content/head.php';?>
   </head>
-  <body>
+  <body class="page-team">
     <header>
       <?php include 'content/header.php';?>
     </header>

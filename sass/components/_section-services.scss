@@ -1,7 +1,7 @@
 #section-services {
 	background: $col-grey-f;
 	.heading-wrap {
-		padding: 6em 0;
+		padding: 4em 0;
 		margin: 0;
 		.sub-heading { 
 			max-width: 15em;
@@ -18,6 +18,7 @@
 		.wrap {
 			@include container (75em);
 			margin: 0 auto;
+			overflow: hidden; 
 			.service {
 				width: 100%;
 				height: auto;
@@ -44,13 +45,17 @@
 					}
 					&:hover {
 						background: rgba(26, 30, 35, 0.8);
+
+
+
+						
 					}
 					.txt {
 						padding: 4.5em 2em;
 						height: auto;
 						color: $col-white;
 						h2 {
-							font-weight: lighter;
+							font-weight: 200;
 							position: relative;
 							margin-bottom: 3em;
 							line-height: 1.4em;

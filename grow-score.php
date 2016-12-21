@@ -4,7 +4,7 @@
       <title>Grow Scores - Analytics</title>
       <?php include 'content/head.php';?>
   </head>
-  <body>
+  <body class="page-analytics">
     <header>
       <?php include 'content/header.php';?>
     </header>

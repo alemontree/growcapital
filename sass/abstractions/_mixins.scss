@@ -66,3 +66,22 @@
 }
 
 
+// Navigation blue underline Mixin. Takes the page class and sets the underline to the li class name.
+@mixin nav-underline ($page) {
+	.#{$page} {
+		border-bottom: 2px solid  $col-brand-1;
+		padding-bottom: .5em;
+		a {
+			color: $col-brand-1;
+			padding-bottom: 2em;
+			position: relative;	
+			margin-bottom: 1em;
+		}
+	}
+	main {
+		margin-top: -.5em; // negative number the same as the  variable page's padding-bottom #
+	    position: relative;
+	    z-index: 9999;
+	}
+}
+

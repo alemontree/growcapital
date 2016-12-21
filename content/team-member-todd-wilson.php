@@ -14,6 +14,14 @@
 				<p>Todd received a BA in Economics from the University of California at Berkeley, focusing on Investments and Econometrics. </p>
 
 				<p>On the weekends, Todd can usually be found in the mountains or near a body of water with his two young children.</p>
+				
+				<div class="get-in-contact">
+					<ul>
+						<li class="contact-txt">Questions? Contact Todd:</li>
+						<li class="phone"><a href="tel:+14159909499"><img alt="Phone" class="contact-icon" src="images/iphone.svg" /> 415-990-9499</a></li>
+						<li class="email"><a class="email" href="mailto:todd@growapp.us"><img alt="Email Us" class="contact-icon" src="images/mail.svg" /> todd@growcapital.us</a></li>
+					</ul>
+				</div>
 			</li>
 		</ul>
 	</article>

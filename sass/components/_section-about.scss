@@ -3,18 +3,17 @@
 	.intro-wrap {
 		@include container ($container-full);
 		text-align: center;
-		height: 320px;
-		margin: 5em auto 6em auto;
+		margin: 4em auto 4em auto;
 	    padding: 0 1em;
 		p {
 			max-width:25em;
 		    text-align: center;
-		    margin: 4em auto;
+		    margin: 1em auto;
 		    font-size: 1.4em;
 		    line-height: 1.5em;
 		    font-style: italic;
 		}
-	}
+	} 
 	.intro-summary {
 	    max-width: 50em;
 	    margin: 0 auto;
@@ -43,12 +42,11 @@
 				display: flex;  
 				flex-wrap: wrap;
 				li {
-					transition: all .4s ease-in-out;
+					overflow: hidden;
 					display: inline-block;
 					width: 100%;
 					background: $col-black;
-					max-height: 16em;
-					overflow: hidden;
+					height: 100%;
 					font-size: 1.5em;
 					font-size: 7vw;
 					@include breakpoint ($bp-small) {
@@ -69,16 +67,19 @@
 						font-size: 1.3em;
 					}
 					.img {
-						object-fit: cover !important;
 						margin: 0;
 						padding: 0;
-						img {
+						display: inline-block; /* change the default display type to inline-block */
+    					overflow: hidden;      /* hide the overflow */
+						position: relative;
+						z-index: 1;
+						img {	
 							width: 100%;
 							height: 100%;
-						    -webkit-transition: all 0.5s ease;
-						    -moz-transition: all 0.5s ease;
-						    -o-transition: all 0.5s ease;
-						    transition: all 0.5s ease;
+						    -webkit-transition: all 0.9s ease;
+						    -moz-transition: all 0.9s ease;
+						    -o-transition: all 0.9s ease;
+						    transition: all 0.9s ease;
 						    opacity: .3;
 						    @include breakpoint ($bp-large) {
 						    	opacity: 1;
@@ -92,7 +93,7 @@
 						display: block;
 						position: absolute;
 						color: $col-white;
-						margin-top: 6em;
+						margin-top: 8em;
 						vertical-align: bottom;
 						opacity: 1;
 						z-index: 9999;
@@ -101,6 +102,7 @@
 							font: 300 1.4em/1.2em $font-base-family;
 							text-transform: none;
 							margin: 2em 0 .5em 0;
+							color: $col-white;
 						}
 						@include breakpoint ($bp-small) {
 							font-size: .8em;
@@ -140,13 +142,25 @@
 						}
 					}
 					&:hover {
+						img {
+						    transform:scale(1.035);
+						    -ms-transform:scale(1.035); /* IE 9 */
+						    -moz-transform:scale(1.035); /* Firefox */
+						    -webkit-transform:scale(1.035); /* Safari and Chrome */
+						    -o-transform:scale(1.035); /* Opera */
+						    -webkit-transition: transform 1.05s ease-in-out;
+						    -moz-transition:transform 1.05s ease-in-out;
+						    -ms-transition:transform 1.05s ease-in-out;
+						    -webkit-transition: transform 1.05s ease-out;
+						    -moz-transition:transform 1.05s ease-out;
+						    -ms-transition:transform 1.05s ease-out;
+						}
 						:first-child { 
 							display: block;
 						    z-index: 10;
 						}
-						:nth-child(2) {		
+						:nth-child(2) {
 							img {
-									object-fit: cover;
 							    -webkit-transition: all 0.5s ease;
 							    -moz-transition: all 0.5s ease;
 							    -o-transition: all 0.5s ease;
